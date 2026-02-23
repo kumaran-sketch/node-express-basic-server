@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    image: kumaran190/node-express-basic-server:latest
+    container_name: docker_test_app
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: always
