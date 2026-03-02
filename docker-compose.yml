@@ -1,17 +1,6 @@
 version: "3.8"
 
 services:
-  app:
-    image: kumaran190/node-express-basic-server:latest
-    container_name: docker_test_app
-    expose:
-      - "3000"
-    env_file:
-      - .env
-    restart: always
-    networks:
-      - app-network
-
   nginx:
     image: nginx:latest
     container_name: docker_test_nginx
