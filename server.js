@@ -6,11 +6,11 @@ app.get('/checkNginx', (req, res) => {
     console.log('Received GET request at checkNginx',req.headers);
     res.status(200).json({
         success: true,
-        message: "Hello from Express server Testing the mat!"
+        message: "Hello from Express server Testing!"
     });
 });
 
 // Start Server
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.listen(3000,  () => {
+    console.log("Server running on port 3000");
 });
